@@ -101,12 +101,12 @@ btn_close = tk.Button(root, text=")", command=lambda: add_to_calculation(")"), w
 btn_close.grid(row=5, column=3)
 
 #button clear
-btn_clear = tk.Button(root, text="C", command=clear_field, width=5, font=("Arial", 14))
+btn_clear = tk.Button(root, text="C", command=clear_field, width=12, font=("Arial", 14))
 btn_clear.grid(row=6, column=1, columnspan=2)
 
-#button quals 
+#button equals 
 #no lambda needed as it is a funtion
-btn_equals = tk.Button(root, text="=", command=evaluate_calculation , width=10, font=("Arial", 14))
+btn_equals = tk.Button(root, text="=", command=evaluate_calculation , width=12, font=("Arial", 14))
 btn_equals.grid(row=6, column=3, columnspan=2)
 
 root.mainloop()
